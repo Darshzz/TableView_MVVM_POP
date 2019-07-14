@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopUpView" customModule="TamBoon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pu-QE-c6m">
+                    <rect key="frame" x="30" y="363" width="354" height="170"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success" translatesAutoresizingMaskIntoConstraints="NO" id="iNH-nX-ZnX">
+                            <rect key="frame" x="137" y="-29" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="NzP-Zt-4md"/>
+                                <constraint firstAttribute="height" constant="80" id="q0O-OF-2oZ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have successfully donated amount to the Charity. Great Step for other's life." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3M-OQ-1Ge">
+                            <rect key="frame" x="8" y="61" width="338" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="ebv-wD-7VN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8H-Th-UB6">
+                            <rect key="frame" x="63" y="127" width="229" height="30"/>
+                            <color key="backgroundColor" red="0.99658399819999999" green="0.57431119679999998" blue="0.1450069249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="lZv-qO-OGK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="15"/>
+                            <state key="normal" title="Thank You">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnClose_Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="OMk-7O-9Ij"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="P8H-Th-UB6" firstAttribute="leading" secondItem="4pu-QE-c6m" secondAttribute="leading" constant="63" id="17U-Ja-eOg"/>
+                        <constraint firstItem="iNH-nX-ZnX" firstAttribute="top" secondItem="4pu-QE-c6m" secondAttribute="top" constant="-29" id="2xo-uP-b0t"/>
+                        <constraint firstAttribute="trailing" secondItem="c3M-OQ-1Ge" secondAttribute="trailing" constant="8" id="8aI-dr-MBu"/>
+                        <constraint firstAttribute="trailing" secondItem="P8H-Th-UB6" secondAttribute="trailing" constant="62" id="ADb-yv-GDT"/>
+                        <constraint firstItem="iNH-nX-ZnX" firstAttribute="centerX" secondItem="4pu-QE-c6m" secondAttribute="centerX" id="ChW-WP-Zvc"/>
+                        <constraint firstAttribute="bottom" secondItem="P8H-Th-UB6" secondAttribute="bottom" constant="13" id="Y7u-IR-FC5"/>
+                        <constraint firstItem="c3M-OQ-1Ge" firstAttribute="leading" secondItem="4pu-QE-c6m" secondAttribute="leading" constant="8" id="Yp3-sW-zfa"/>
+                        <constraint firstItem="c3M-OQ-1Ge" firstAttribute="top" secondItem="iNH-nX-ZnX" secondAttribute="bottom" constant="10" id="aax-WY-ddP"/>
+                        <constraint firstAttribute="height" constant="170" id="fhJ-t4-zF7"/>
+                        <constraint firstItem="P8H-Th-UB6" firstAttribute="top" secondItem="c3M-OQ-1Ge" secondAttribute="bottom" constant="20" id="llB-EU-Z0g"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4pu-QE-c6m" secondAttribute="trailing" constant="30" id="FSg-Q9-4iF"/>
+                <constraint firstItem="4pu-QE-c6m" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UYP-mZ-trZ"/>
+                <constraint firstItem="4pu-QE-c6m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="csY-6q-Rfs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="containerView" destination="4pu-QE-c6m" id="qQV-e7-muU"/>
+            </connections>
+            <point key="canvasLocation" x="88.799999999999997" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="success" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
+</document>

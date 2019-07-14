@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  TamBoon
+
+  Created by Darshan on 13/07/19.
+  Copyright © 2019 Darshan. All rights reserved.
+*/
+
+
+"NAME"    = "name";
+"TOKEN"   = "token";
+"AMOUNT"  = "amount";
+
+"ALERT"   = "Alert";
